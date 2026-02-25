@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useToast } from '../context/ToastContext';
+import { API_BASE_URL } from '../config';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -101,7 +102,7 @@ const Register = () => {
         data.append("file", formData.idProofFile);
 
         try {
-            const response = await fetch('http://localhost:8080/api/auth/register', {
+            const response = await fetch(`${API_BASE_URL}/api/auth/register`, {
                 method: 'POST',
                 body: data
             });
@@ -409,7 +410,7 @@ const Register = () => {
                                         background: '#f8fafc',
                                         transition: 'all 0.3s ease'
                                     }}>
-                                        <input type="file" onChange={handleFileChange} required accept="image/*,.pdf" style={{ display: 'none' }} />
+                                        <input type="file" onChange={handleFileChange} accept="image/*,.pdf" style={{ display: 'none' }} />
                                         <div style={{ fontSize: '2.5rem', color: 'var(--primary-color)', marginBottom: '0.5rem' }}>
                                             {formData.idProofFile ? '📄' : '☁️'}
                                         </div>

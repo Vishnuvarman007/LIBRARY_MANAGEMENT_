@@ -5,6 +5,7 @@ import com.lms.backend.model.User;
 import com.lms.backend.repository.AdminRepository;
 import com.lms.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -19,6 +20,9 @@ public class AuthService {
 
     @Autowired
     private EmailService emailService;
+
+    @Value("${file.upload-dir}")
+    private String uploadDir;
 
     private String generateRandomPassword() {
         String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$";
@@ -133,14 +137,14 @@ public class AuthService {
     }
 
     public String saveIdProof(org.springframework.web.multipart.MultipartFile file) throws java.io.IOException {
-        String uploadDir = "uploads/id_proofs/";
-        java.io.File directory = new java.io.File(uploadDir);
+        String idProofDir = uploadDir + "/id_proofs/";
+        java.io.File directory = new java.io.File(idProofDir);
         if (!directory.exists()) {
             directory.mkdirs();
         }
         String fileName = System.currentTimeMillis() + "_" + file.getOriginalFilename();
-        String filePath = uploadDir + fileName;
+        String filePath = idProofDir + fileName;
         file.transferTo(new java.io.File(filePath));
-        return filePath;
+        return "uploads/id_proofs/" + fileName;
     }
 }
