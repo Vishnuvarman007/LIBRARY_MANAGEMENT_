@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Book Images</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .book-card { 
+            display: inline-block; 
+            margin: 10px; 
+            border: 1px solid #ccc; 
+            padding: 10px;
+            width: 200px;
+        }
+        .book-image { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: contain; 
+            background: #f0f0f0;
+        }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Book Cover Images Test</h1>
+    <p>Testing if images load from backend...</p>
+    
+    <div id="books-container"></div>
+
+    <script>
+        // Fetch books from API
+        fetch('http://localhost:8080/api/books')
+            .then(res => res.json())
+            .then(books => {
+                const container = document.getElementById('books-container');
+                
+                books.forEach(book => {
+                    const card = document.createElement('div');
+                    card.className = 'book-card';
+                    
+                    const imageUrl = book.coverImage 
+                        ? `http://localhost:8080/api/books/image/${encodeURIComponent(book.coverImage)}`
+                        : '';
+                    
+                    card.innerHTML = `
+                        <h3>${book.title}</h3>
+                        <p>Author: ${book.author}</p>
+                        ${book.coverImage ? `
+                            <img src="${imageUrl}" 
+                                 class="book-image" 
+                                 alt="${book.title}"
+                                 onload="this.nextElementSibling.className='success'"
+                                 onerror="this.nextElementSibling.className='error'; this.nextElementSibling.textContent='Failed to load image'">
+                            <p class="success">Image loaded ✓</p>
+                            <p style="font-size: 10px; word-break: break-all;">URL: ${imageUrl}</p>
+                        ` : '<p class="error">No cover image</p>'}
+                    `;
+                    
+                    container.appendChild(card);
+                });
+            })
+            .catch(err => {
+                document.getElementById('books-container').innerHTML = 
+                    `<p class="error">Error loading books: ${err.message}</p>`;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,503 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.lms:backend >---------------------------
+[INFO] Building backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.3:run (default-cli) > test-compile @ backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ backend ---
+[INFO] skip non existing resourceDirectory D:\lms - Copy\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.3:run (default-cli) < test-compile @ backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.3:run (default-cli) @ backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-01T11:41:51.737+05:30  INFO 1188 --- [backend] [           main] com.lms.backend.BackendApplication       : Starting BackendApplication using Java 17.0.12 with PID 1188 (D:\lms - Copy\backend\target\classes started by kirth in D:\lms - Copy\backend)
+2026-03-01T11:41:51.739+05:30  INFO 1188 --- [backend] [           main] com.lms.backend.BackendApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-01T11:41:52.432+05:30  INFO 1188 --- [backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-01T11:41:52.504+05:30  INFO 1188 --- [backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 9 JPA repository interfaces.
+2026-03-01T11:41:53.025+05:30  INFO 1188 --- [backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-01T11:41:53.040+05:30  INFO 1188 --- [backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-01T11:41:53.040+05:30  INFO 1188 --- [backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-01T11:41:53.096+05:30  INFO 1188 --- [backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-01T11:41:53.097+05:30  INFO 1188 --- [backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1301 ms
+2026-03-01T11:41:53.208+05:30  INFO 1188 --- [backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-01T11:41:53.260+05:30  INFO 1188 --- [backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-01T11:41:53.291+05:30  INFO 1188 --- [backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-01T11:41:53.483+05:30  INFO 1188 --- [backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-01T11:41:53.503+05:30  INFO 1188 --- [backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-01T11:41:53.652+05:30  INFO 1188 --- [backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c995c5d
+2026-03-01T11:41:53.653+05:30  INFO 1188 --- [backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-01T11:41:53.674+05:30  WARN 1188 --- [backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-01T11:41:53.674+05:30  WARN 1188 --- [backend] [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-01T11:41:54.772+05:30  INFO 1188 --- [backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-01T11:41:54.937+05:30  INFO 1188 --- [backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-01T11:41:55.577+05:30  INFO 1188 --- [backend] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-01T11:41:56.197+05:30  WARN 1188 --- [backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-01T11:41:56.718+05:30  INFO 1188 --- [backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-01T11:41:56.731+05:30  INFO 1188 --- [backend] [           main] com.lms.backend.BackendApplication       : Started BackendApplication in 5.319 seconds (process running for 5.615)
+Hibernate: select p1_0.id from plans p1_0 where p1_0.name=? limit ?
+Hibernate: select p1_0.id from plans p1_0 where p1_0.name=? limit ?
+Hibernate: select p1_0.id from plans p1_0 where p1_0.name=? limit ?
+Hibernate: select a1_0.id,a1_0.email,a1_0.name,a1_0.password,a1_0.username from admins a1_0 where a1_0.username=?
+Hibernate: select a1_0.id,a1_0.email,a1_0.name,a1_0.password,a1_0.username from admins a1_0 where a1_0.id=?
+2026-03-01T11:42:50.537+05:30  INFO 1188 --- [backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-01T11:42:50.539+05:30  INFO 1188 --- [backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-01T11:42:50.542+05:30  INFO 1188 --- [backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select f1_0.id,f1_0.book_id,f1_0.user_id from favorites f1_0 left join users u1_0 on u1_0.id=f1_0.user_id where u1_0.id=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0 where br1_0.user_id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0 where br1_0.user_id=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select f1_0.id,f1_0.book_id,f1_0.user_id from favorites f1_0 left join users u1_0 on u1_0.id=f1_0.user_id where u1_0.id=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select r1_0.id,r1_0.book_id,r1_0.comment,r1_0.created_at,r1_0.rating,r1_0.user_id from reviews r1_0 left join books b1_0 on b1_0.id=r1_0.book_id where b1_0.id=? order by r1_0.created_at desc
+Hibernate: select f1_0.id,f1_0.book_id,f1_0.user_id from favorites f1_0 left join users u1_0 on u1_0.id=f1_0.user_id where u1_0.id=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select r1_0.id,r1_0.book_id,r1_0.comment,r1_0.created_at,r1_0.rating,r1_0.user_id from reviews r1_0 left join books b1_0 on b1_0.id=r1_0.book_id where b1_0.id=? order by r1_0.created_at desc
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: delete from books where id=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select a1_0.id,a1_0.email,a1_0.name,a1_0.password,a1_0.username from admins a1_0 where a1_0.username=? or a1_0.email=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.email=? or u1_0.registration_id=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select f1_0.id,f1_0.book_id,f1_0.user_id from favorites f1_0 left join users u1_0 on u1_0.id=f1_0.user_id where u1_0.id=?
+Hibernate: select r1_0.id,r1_0.book_id,r1_0.comment,r1_0.created_at,r1_0.rating,r1_0.user_id from reviews r1_0 left join books b1_0 on b1_0.id=r1_0.book_id where b1_0.id=? order by r1_0.created_at desc
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select r1_0.id,r1_0.book_id,r1_0.comment,r1_0.created_at,r1_0.rating,r1_0.user_id from reviews r1_0 left join books b1_0 on b1_0.id=r1_0.book_id where b1_0.id=? order by r1_0.created_at desc
+Hibernate: select f1_0.id,f1_0.book_id,f1_0.user_id from favorites f1_0 left join users u1_0 on u1_0.id=f1_0.user_id where u1_0.id=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: insert into book_request_messages (book_id,message,request_date,response_date,status,user_id) values (?,?,?,?,?,?)
+DEBUG: Jakarta Mail version 2.1.2
+DEBUG: URL jar:file:/C:/Users/kirth/.m2/repository/org/eclipse/angus/jakarta.mail/2.0.2/jakarta.mail-2.0.2.jar!/META-INF/javamail.providers
+DEBUG: successfully loaded resource: jar:file:/C:/Users/kirth/.m2/repository/org/eclipse/angus/jakarta.mail/2.0.2/jakarta.mail-2.0.2.jar!/META-INF/javamail.providers
+DEBUG: successfully loaded resource: /META-INF/javamail.default.providers
+DEBUG: Tables of loaded providers
+DEBUG: Providers Listed By Class Name: {org.eclipse.angus.mail.imap.IMAPStore=jakarta.mail.Provider[STORE,imap,org.eclipse.angus.mail.imap.IMAPStore,Oracle], org.eclipse.angus.mail.smtp.SMTPTransport=jakarta.mail.Provider[TRANSPORT,smtp,org.eclipse.angus.mail.smtp.SMTPTransport,Oracle], org.eclipse.angus.mail.pop3.POP3Store=jakarta.mail.Provider[STORE,pop3,org.eclipse.angus.mail.pop3.POP3Store,Oracle], org.eclipse.angus.mail.pop3.POP3SSLStore=jakarta.mail.Provider[STORE,pop3s,org.eclipse.angus.mail.pop3.POP3SSLStore,Oracle], org.eclipse.angus.mail.smtp.SMTPSSLTransport=jakarta.mail.Provider[TRANSPORT,smtps,org.eclipse.angus.mail.smtp.SMTPSSLTransport,Oracle], org.eclipse.angus.mail.imap.IMAPSSLStore=jakarta.mail.Provider[STORE,imaps,org.eclipse.angus.mail.imap.IMAPSSLStore,Oracle]}
+DEBUG: Providers Listed By Protocol: {imap=jakarta.mail.Provider[STORE,imap,org.eclipse.angus.mail.imap.IMAPStore,Oracle], smtp=jakarta.mail.Provider[TRANSPORT,smtp,org.eclipse.angus.mail.smtp.SMTPTransport,Oracle], pop3=jakarta.mail.Provider[STORE,pop3,org.eclipse.angus.mail.pop3.POP3Store,Oracle], imaps=jakarta.mail.Provider[STORE,imaps,org.eclipse.angus.mail.imap.IMAPSSLStore,Oracle], smtps=jakarta.mail.Provider[TRANSPORT,smtps,org.eclipse.angus.mail.smtp.SMTPSSLTransport,Oracle], pop3s=jakarta.mail.Provider[STORE,pop3s,org.eclipse.angus.mail.pop3.POP3SSLStore,Oracle]}
+DEBUG: successfully loaded resource: /META-INF/javamail.default.address.map
+DEBUG: URL jar:file:/C:/Users/kirth/.m2/repository/org/eclipse/angus/jakarta.mail/2.0.2/jakarta.mail-2.0.2.jar!/META-INF/javamail.address.map
+DEBUG: successfully loaded resource: jar:file:/C:/Users/kirth/.m2/repository/org/eclipse/angus/jakarta.mail/2.0.2/jakarta.mail-2.0.2.jar!/META-INF/javamail.address.map
+DEBUG: getProvider() returning jakarta.mail.Provider[TRANSPORT,smtp,org.eclipse.angus.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 587, isSSL false
+220 smtp.gmail.com ESMTP d9443c01a7336-2adfb6d24b3sm98087845ad.78 - gsmtp
+DEBUG SMTP: connected to host "smtp.gmail.com", port: 587
+EHLO 192.168.1.56
+250-smtp.gmail.com at your service, [111.93.109.86]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+STARTTLS
+220 2.0.0 Ready to start TLS
+EHLO 192.168.1.56
+250-smtp.gmail.com at your service, [111.93.109.86]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=saaiedarshan@gmail.com, password=<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<saaiedarshan@gmail.com>
+250 2.1.0 OK d9443c01a7336-2adfb6d24b3sm98087845ad.78 - gsmtp
+RCPT TO:<admin@lms.com>
+250 2.1.5 OK d9443c01a7336-2adfb6d24b3sm98087845ad.78 - gsmtp
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   admin@lms.com
+DATA
+354 Go ahead d9443c01a7336-2adfb6d24b3sm98087845ad.78 - gsmtp
+Date: Sun, 1 Mar 2026 12:19:19 +0530 (IST)
+From: saaiedarshan@gmail.com
+To: admin@lms.com
+Message-ID: <651283020.0.1772347759804@[192.168.1.56]>
+Subject: New Book Request: Alchemist
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Librarian,
+
+User Kirthi  d (230333.cd@rmkec.ac.in) has requested the book 'Alchemist'.
+
+Message: I would like to request this book.
+
+Please log in to the LMS portal to approve or reject this request.
+.
+250 2.0.0 OK  1772347761 d9443c01a7336-2adfb6d24b3sm98087845ad.78 - gsmtp
+DEBUG SMTP: message successfully delivered to mail server
+QUIT
+221 2.0.0 closing connection d9443c01a7336-2adfb6d24b3sm98087845ad.78 - gsmtp
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id,u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from book_request_messages brm1_0 join books b1_0 on b1_0.id=brm1_0.book_id join users u1_0 on u1_0.id=brm1_0.user_id where brm1_0.id=?
+DEBUG: getProvider() returning jakarta.mail.Provider[TRANSPORT,smtp,org.eclipse.angus.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 587, isSSL false
+220 smtp.gmail.com ESMTP d2e1a72fcca58-8273a05e831sm9846262b3a.58 - gsmtp
+DEBUG SMTP: connected to host "smtp.gmail.com", port: 587
+EHLO 192.168.1.56
+250-smtp.gmail.com at your service, [111.93.109.86]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+STARTTLS
+220 2.0.0 Ready to start TLS
+EHLO 192.168.1.56
+250-smtp.gmail.com at your service, [111.93.109.86]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=saaiedarshan@gmail.com, password=<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+Hibernate: select brm1_0.id,brm1_0.book_id,b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id,u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from book_request_messages brm1_0 join books b1_0 on b1_0.id=brm1_0.book_id join users u1_0 on u1_0.id=brm1_0.user_id where brm1_0.id=?
+DEBUG: getProvider() returning jakarta.mail.Provider[TRANSPORT,smtp,org.eclipse.angus.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 587, isSSL false
+220 smtp.gmail.com ESMTP 98e67ed59e1d1-35901883a0bsm19059115a91.6 - gsmtp
+DEBUG SMTP: connected to host "smtp.gmail.com", port: 587
+EHLO 192.168.1.56
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<saaiedarshan@gmail.com>
+250-smtp.gmail.com at your service, [111.93.109.86]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+STARTTLS
+250 2.1.0 OK d2e1a72fcca58-8273a05e831sm9846262b3a.58 - gsmtp
+RCPT TO:<kirthisaaie@gmail.com>
+220 2.0.0 Ready to start TLS
+EHLO 192.168.1.56
+250 2.1.5 OK d2e1a72fcca58-8273a05e831sm9846262b3a.58 - gsmtp
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   kirthisaaie@gmail.com
+DATA
+250-smtp.gmail.com at your service, [111.93.109.86]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=saaiedarshan@gmail.com, password=<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+354 Go ahead d2e1a72fcca58-8273a05e831sm9846262b3a.58 - gsmtp
+Date: Sun, 1 Mar 2026 12:19:35 +0530 (IST)
+From: saaiedarshan@gmail.com
+To: kirthisaaie@gmail.com
+Message-ID: <461959340.1.1772347775031@[192.168.1.56]>
+Subject: Book Request Rejected
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Tharun,
+
+Your request for the book 'Alchemist' has been REJECTED.
+Librarian Note: Unfortunately, your request for Alchemist has been denied.
+.
+Hibernate: select brm1_0.id,brm1_0.book_id,b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id,u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from book_request_messages brm1_0 join books b1_0 on b1_0.id=brm1_0.book_id join users u1_0 on u1_0.id=brm1_0.user_id where brm1_0.id=?
+DEBUG: getProvider() returning jakarta.mail.Provider[TRANSPORT,smtp,org.eclipse.angus.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 587, isSSL false
+250 2.0.0 OK  1772347776 d2e1a72fcca58-8273a05e831sm9846262b3a.58 - gsmtp
+DEBUG SMTP: message successfully delivered to mail server
+QUIT
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<saaiedarshan@gmail.com>
+220 smtp.gmail.com ESMTP d9443c01a7336-2adfb6a03fbsm141808395ad.43 - gsmtp
+DEBUG SMTP: connected to host "smtp.gmail.com", port: 587
+EHLO 192.168.1.56
+250 2.1.0 OK 98e67ed59e1d1-35901883a0bsm19059115a91.6 - gsmtp
+RCPT TO:<kirthisaaie@gmail.com>
+221 2.0.0 closing connection d2e1a72fcca58-8273a05e831sm9846262b3a.58 - gsmtp
+Hibernate: update book_request_messages set book_id=?,message=?,request_date=?,response_date=?,status=?,user_id=? where id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+250-smtp.gmail.com at your service, [111.93.109.86]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+STARTTLS
+250 2.1.5 OK 98e67ed59e1d1-35901883a0bsm19059115a91.6 - gsmtp
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   kirthisaaie@gmail.com
+DATA
+220 2.0.0 Ready to start TLS
+EHLO 192.168.1.56
+354 Go ahead 98e67ed59e1d1-35901883a0bsm19059115a91.6 - gsmtp
+Date: Sun, 1 Mar 2026 12:19:36 +0530 (IST)
+From: saaiedarshan@gmail.com
+To: kirthisaaie@gmail.com
+Message-ID: <1223746550.2.1772347776573@[192.168.1.56]>
+Subject: Book Request Rejected
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Tharun,
+
+Your request for the book 'Alchemist' has been REJECTED.
+Librarian Note: Unfortunately, your request for Alchemist has been denied.
+.
+250-smtp.gmail.com at your service, [111.93.109.86]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=saaiedarshan@gmail.com, password=<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+250 2.0.0 OK  1772347777 98e67ed59e1d1-35901883a0bsm19059115a91.6 - gsmtp
+DEBUG SMTP: message successfully delivered to mail server
+QUIT
+221 2.0.0 closing connection 98e67ed59e1d1-35901883a0bsm19059115a91.6 - gsmtp
+Hibernate: update book_request_messages set book_id=?,message=?,request_date=?,response_date=?,status=?,user_id=? where id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<saaiedarshan@gmail.com>
+250 2.1.0 OK d9443c01a7336-2adfb6a03fbsm141808395ad.43 - gsmtp
+RCPT TO:<kirthisaaie@gmail.com>
+250 2.1.5 OK d9443c01a7336-2adfb6a03fbsm141808395ad.43 - gsmtp
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   kirthisaaie@gmail.com
+DATA
+354 Go ahead d9443c01a7336-2adfb6a03fbsm141808395ad.43 - gsmtp
+Date: Sun, 1 Mar 2026 12:19:38 +0530 (IST)
+From: saaiedarshan@gmail.com
+To: kirthisaaie@gmail.com
+Message-ID: <1651825895.3.1772347778604@[192.168.1.56]>
+Subject: Book Request Rejected
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Tharun,
+
+Your request for the book 'Alchemist' has been REJECTED.
+Librarian Note: Unfortunately, your request for Alchemist has been denied.
+.
+250 2.0.0 OK  1772347779 d9443c01a7336-2adfb6a03fbsm141808395ad.43 - gsmtp
+DEBUG SMTP: message successfully delivered to mail server
+QUIT
+221 2.0.0 closing connection d9443c01a7336-2adfb6a03fbsm141808395ad.43 - gsmtp
+Hibernate: update book_request_messages set book_id=?,message=?,request_date=?,response_date=?,status=?,user_id=? where id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select brm1_0.id,brm1_0.book_id,brm1_0.message,brm1_0.request_date,brm1_0.response_date,brm1_0.status,brm1_0.user_id from book_request_messages brm1_0 where brm1_0.status=?
+Hibernate: select b1_0.id,b1_0.author,b1_0.available_copies,b1_0.cover_image,b1_0.genre,b1_0.is_premium,b1_0.isbn,b1_0.publisher,b1_0.title,b1_0.total_copies from books b1_0 where b1_0.id=?
+Hibernate: select u1_0.id,u1_0.academic_info_json,u1_0.city,u1_0.email,u1_0.employee_id,u1_0.first_name,u1_0.gender,u1_0.govt_id_number,u1_0.govt_id_type,u1_0.id_proof_path,u1_0.last_name,u1_0.marital_status,u1_0.password,u1_0.password_update_required,u1_0.phone,u1_0.pincode,u1_0.registration_id,u1_0.role,u1_0.specialization,u1_0.state,u1_0.status,u1_0.street,u1_0.work_experience_json,u1_0.years_of_experience from users u1_0 where u1_0.id=?
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+Hibernate: select br1_0.id,br1_0.book_id,br1_0.due_date,br1_0.issue_date,br1_0.return_date,br1_0.status,br1_0.user_id from borrow_records br1_0
+2026-03-01T13:32:53.491+05:30  WARN 1188 --- [backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m58s448ms695µs600ns).
