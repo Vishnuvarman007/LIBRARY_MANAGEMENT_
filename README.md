@@ -68,6 +68,9 @@ The system follows a **decoupled architecture** using a **React frontend** and a
 - Faster check-in/check-out support
 
 ---
+<img width="1862" height="882" alt="image" src="https://github.com/user-attachments/assets/d92f46ac-abbc-4805-878e-28e3963aae4e" />
+<img width="1858" height="901" alt="image" src="https://github.com/user-attachments/assets/2a73d353-4e8b-43ec-8ece-b1092030f552" />
+
 
 # 🛠️ Technology Stack
 
